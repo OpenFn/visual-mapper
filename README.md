@@ -18,6 +18,8 @@ This webform will also allow the user to insert `source value placeholders` from
 
 These are effectively "ingredients" in an If-This-Then-That recipie.
 
+![Image of Layout](https://github.com/OpenFn/visual_mapper/blob/master/layout.png)
+
 Important artifacts:
 --------------
 
