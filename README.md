@@ -5,3 +5,9 @@ Given a "composite destination schema" the user wants to be able to create or up
 We'd like to use https://github.com/jdorn/json-editor to present the user with a simple webform.
 
 The user can type values, or use values from a "source_schema" so that when a submission arrives from that source, the data in the submission is used to populate the correct fields in the destination.
+
+Still needed:
+-------------
+1. Source schema for ODK form in JSON-schema format.
+
+
