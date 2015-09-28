@@ -1,13 +1,19 @@
 # visual_mapper
 
-Given a "composite destination schema" the user wants to be able to create or update records in a destination database.
+Objective
+-----------
+Open-source Zapier/IFTTT "mapping generator" to provide automation services to the international development sector—current projects are in public health, agriculture, and education.
 
-We'd like to use https://github.com/jdorn/json-editor to present the user with a simple webform.
+Stories will be documented as github issues. The epic is this:
+-------------------------
+1. Given a schema in "JSON-schema" the user wants to be able to define an action (create or update records) in a destination database.
 
-The user can type values, or use values from a "source_schema" so that when a submission arrives from that source, the data in the submission is used to populate the correct fields in the destination.
+We'd like to use JSON-editor (https://github.com/jdorn/json-editor) to present the user with an HTML webform to define the insert/update action.
 
-Still needed:
--------------
-1. Source schema for ODK form in JSON-schema format.
+This webform will allow the user to type values for each field in the destination schema(s).
 
+This webform will also allow the user to insert `placeholders` from a `source schema` that tells us what to expect from a triggering event.
 
+	i.e., When a new patient record is created in the mobile clinic system, create a new outbound SMS record in the sms gateway.
+
+These are effectively "ingredients" in an If-This-Then-That recipie.
