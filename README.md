@@ -14,7 +14,8 @@ This webform will allow the user to type values for each field in the destinatio
 
 This webform will also allow the user to insert `source value placeholders` from a `source schema` that tell us what to expect from a triggering event.
 
-	i.e., When a new patient record is created in the mobile clinic system, create a new outbound SMS record in the sms gateway.
+	i.e., `WHEN` a new patient record is created in the mobile clinic system,
+	`THEN` create a new outbound SMS record in the sms gateway.
 
 These are effectively "ingredients" in an If-This-Then-That recipie.
 
