@@ -12,8 +12,20 @@ We'd like to use JSON-editor (https://github.com/jdorn/json-editor) to present t
 
 This webform will allow the user to type values for each field in the destination schema(s).
 
-This webform will also allow the user to insert `placeholders` from a `source schema` that tells us what to expect from a triggering event.
+This webform will also allow the user to insert `source value placeholders` from a `source schema` that tell us what to expect from a triggering event.
 
 	i.e., When a new patient record is created in the mobile clinic system, create a new outbound SMS record in the sms gateway.
 
 These are effectively "ingredients" in an If-This-Then-That recipie.
+
+Important artifacts:
+--------------
+
+1. Destination schema: this defines our HTML form. a composite schema (with several objects) can be found @composite_destination_schema.json
+
+2. Source schema: this is used to mix-in `source value placeholders` (ingredients) to our final action directive. found @sample_source_schema.json
+
+3. A sample "JOLT spec": this is what is currently being used to transform source payloads into destination payloads. found @sample_transform_spec.json
+
+4. a sample source payload to play with: @sample_source_payload.json
+5. a sample wished destination payload to aim for: @target_sample_destination_payload.json 
