@@ -1,0 +1,78 @@
+[
+  {
+    "sObject": "CCM_MonitorLog__c",
+    "properties": {
+      "ODK_time_end__c": "2015-08-18T13:53:21.196Z",
+      "ODK_date__c": "2015-08-18",
+      "ODK_device__c": "865975021086209",
+      "monitor_name__c": "LMBMonitor",
+      "wind_direction__c": "wind_east",
+      "landing_site__c": "lambertsbaai",
+      "sea_condition__c": "sea_calm",
+      "wind_strength__c": "wind_breezy",
+      "weather__c": "weather_cloudy",
+      "lat__c": -32.0919195,
+      "lon__c": 18.3026015,
+      "alt__c": 0.0,
+      "acc__c": 27.0,
+      "num_boats_launched__c": 2,
+      "ODK_uuid__c": "uuid:28577d70-ad6a-4e03-bbcf-71a3d0de603b"
+    }
+  },
+  {
+    "sObject": "CCM_Boat__c",
+    "properties": {
+      "fisher_name__c": "LMBFisher3",
+      "fisher_gender__c": "male",
+      "permit_has__c": "yes",
+      "boat_type__c": "boat_bakkie",
+      "reg_type__c": "reg_irp",
+      "boat_skipper__c": "LMBFisher3",
+      "boat_owner__c": "LMBFisher3",
+      "crew_number__c": 3,
+      "engine_capacity__c": 40,
+      "comment_has__c": "no",
+      "parent__c": {
+        "$ref": "/0/properties/Id"
+      }
+    }
+  },
+  {
+    "sObject": "CCM_Catch__c",
+    "properties": {
+      "selected_specie__c": "capebream",
+      "catch_number__c": 23,
+      "catch_bait__c": "White mussel",
+      "parent__c": {
+        "$ref": "/1/properties/Id"
+      }
+    }
+  },
+  {
+    "sObject": "CCM_Sample__c",
+    "properties": {
+      "sample_length__c": 34.0,
+      "parent__c": {
+        "$ref": "/2/properties/Id"
+      }
+    }
+  },
+  {
+    "sObject": "CCM_Sample__c",
+    "properties": {
+      "sample_length__c": 33.0,
+      "parent__c": {
+        "$ref": "/2/properties/Id"
+      }
+    }
+  },
+  {
+    "sObject": "CCM_Sample__c",
+    "properties": {
+      "sample_length__c": 32.0,
+      "parent__c": {
+        "$ref": "/2/properties/Id"
+      }
+    }
+  }
+]

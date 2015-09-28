@@ -1,0 +1,700 @@
+{
+  "properties": {
+  	"CCM_MonitorLog__c":{
+  "title": "(CCM) Monitor Log",
+  "properties": {
+    "Id": {
+      "type": "id",
+      "description": "Record ID"
+    },
+    "OwnerId": {
+      "type": "reference",
+      "description": "Owner ID"
+    },
+    "IsDeleted": {
+      "type": "boolean",
+      "description": "Deleted"
+    },
+    "Name": {
+      "type": "string",
+      "description": "(CCM) Monitor Log Name"
+    },
+    "CreatedDate": {
+      "type": "datetime",
+      "description": "Created Date"
+    },
+    "CreatedById": {
+      "type": "reference",
+      "description": "Created By ID"
+    },
+    "LastModifiedDate": {
+      "type": "datetime",
+      "description": "Last Modified Date"
+    },
+    "LastModifiedById": {
+      "type": "reference",
+      "description": "Last Modified By ID"
+    },
+    "SystemModstamp": {
+      "type": "datetime",
+      "description": "System Modstamp"
+    },
+    "LastActivityDate": {
+      "type": "date",
+      "description": "Last Activity Date"
+    },
+    "ODK_uuid__c": {
+      "type": "string",
+      "description": "ODK_uuid"
+    },
+    "ODK_time_end__c": {
+      "type": "string",
+      "description": "ODK_time_end"
+    },
+    "ODK_device__c": {
+      "type": "string",
+      "description": "ODK_device"
+    },
+    "ODK_date__c": {
+      "type": "string",
+      "description": "ODK_date"
+    },
+    "geopoint__c": {
+      "type": "string",
+      "description": "geopoint"
+    },
+    "monitor_name__c": {
+      "type": "string",
+      "description": "monitor_name"
+    },
+    "monitor_name_manual__c": {
+      "type": "string",
+      "description": "monitor_name_manual"
+    },
+    "landing_site__c": {
+      "type": "string",
+      "description": "landing_site"
+    },
+    "weather__c": {
+      "type": "string",
+      "description": "weather"
+    },
+    "wind_strength__c": {
+      "type": "string",
+      "description": "wind_strength"
+    },
+    "wind_direction__c": {
+      "type": "string",
+      "description": "wind_direction"
+    },
+    "sea_condition__c": {
+      "type": "string",
+      "description": "sea_condition"
+    },
+    "calc_form_language__c": {
+      "type": "string",
+      "description": "calc_form_language"
+    },
+    "num_boats_launched__c": {
+      "type": "double",
+      "description": "num_boats_launched"
+    },
+    "geo_lat__c": {
+      "type": "string",
+      "description": "geo_lat"
+    },
+    "Count_of_Boats__c": {
+      "type": "double",
+      "description": "Count of Boats"
+    },
+    "geo_lon__c": {
+      "type": "string",
+      "description": "geo_lon"
+    },
+    "geo_alt__c": {
+      "type": "string",
+      "description": "geo_alt"
+    },
+    "geo_acc__c": {
+      "type": "string",
+      "description": "geo_acc"
+    },
+    "allowedToView__c": {
+      "type": "string",
+      "description": "allowedToView"
+    },
+    "ActivityHistories": {
+      "type": "array",
+      "sObject": "ActivityHistory",
+      "foreignKey": "WhatId"
+    },
+    "Attachments": {
+      "type": "array",
+      "sObject": "Attachment",
+      "foreignKey": "ParentId"
+    },
+    "CCM_Boats__r": {
+      "type": "array",
+      "sObject": "CCM_Boat__c",
+      "foreignKey": "parent__c",
+      "items": {
+        "title": "(CCM) Boat",
+        "properties": {
+          "Id": {
+            "type": "id",
+            "description": "Record ID"
+          },
+          "IsDeleted": {
+            "type": "boolean",
+            "description": "Deleted"
+          },
+          "Name": {
+            "type": "string",
+            "description": "(CCM) Boat Name"
+          },
+          "CreatedDate": {
+            "type": "datetime",
+            "description": "Created Date"
+          },
+          "CreatedById": {
+            "type": "reference",
+            "description": "Created By ID"
+          },
+          "LastModifiedDate": {
+            "type": "datetime",
+            "description": "Last Modified Date"
+          },
+          "LastModifiedById": {
+            "type": "reference",
+            "description": "Last Modified By ID"
+          },
+          "SystemModstamp": {
+            "type": "datetime",
+            "description": "System Modstamp"
+          },
+          "LastActivityDate": {
+            "type": "date",
+            "description": "Last Activity Date"
+          },
+          "parent__c": {
+            "type": "reference",
+            "description": "parent"
+          },
+          "ODK_parent_uuid__c": {
+            "type": "string",
+            "description": "ODK_parent_uuid"
+          },
+          "fisher_name__c": {
+            "type": "string",
+            "description": "fisher_name"
+          },
+          "fisher_gender__c": {
+            "type": "string",
+            "description": "fisher_gender"
+          },
+          "permit_has__c": {
+            "type": "string",
+            "description": "permit_has"
+          },
+          "permit_number__c": {
+            "type": "string",
+            "description": "permit_number"
+          },
+          "boat_type__c": {
+            "type": "string",
+            "description": "boat_type"
+          },
+          "reg_type__c": {
+            "type": "string",
+            "description": "reg_type"
+          },
+          "boat_skipper__c": {
+            "type": "string",
+            "description": "boat_skipper"
+          },
+          "boat_owner__c": {
+            "type": "string",
+            "description": "boat_owner"
+          },
+          "crew_number__c": {
+            "type": "double",
+            "description": "crew_number"
+          },
+          "engine_capacity__c": {
+            "type": "double",
+            "description": "engine_capacity"
+          },
+          "catch_specie_list__c": {
+            "type": "string",
+            "description": "catch_specie_list"
+          },
+          "catch_specie_manual__c": {
+            "type": "string",
+            "description": "catch_specie_manual"
+          },
+          "comment_has__c": {
+            "type": "string",
+            "description": "comment_has"
+          },
+          "comment_text__c": {
+            "type": "string",
+            "description": "comment_text"
+          },
+          "comment_image_url__c": {
+            "type": "string",
+            "description": "comment_image_url"
+          },
+          "fisher_name_manual__c": {
+            "type": "string",
+            "description": "fisher_name_manual"
+          },
+          "boat_owner_manual__c": {
+            "type": "string",
+            "description": "boat_owner_manual"
+          },
+          "boat_skipper_manual__c": {
+            "type": "string",
+            "description": "boat_skipper_manual"
+          },
+          "permit_type__c": {
+            "type": "string",
+            "description": "permit_type"
+          },
+          "ActivityHistories": {
+            "type": "array",
+            "sObject": "ActivityHistory",
+            "foreignKey": "WhatId"
+          },
+          "Attachments": {
+            "type": "array",
+            "sObject": "Attachment",
+            "foreignKey": "ParentId"
+          },
+          "Histories": {
+            "type": "array",
+            "sObject": "CCM_Boat__History",
+            "foreignKey": "ParentId"
+          },
+          "CCM_Catches__r": {
+            "type": "array",
+            "sObject": "CCM_Catch__c",
+            "foreignKey": "parent__c",
+            "items": {
+              "title": "(CCM) Catch",
+              "properties": {
+                "Id": {
+                  "type": "id",
+                  "description": "Record ID"
+                },
+                "IsDeleted": {
+                  "type": "boolean",
+                  "description": "Deleted"
+                },
+                "Name": {
+                  "type": "string",
+                  "description": "(CCM) Catch Name"
+                },
+                "CreatedDate": {
+                  "type": "datetime",
+                  "description": "Created Date"
+                },
+                "CreatedById": {
+                  "type": "reference",
+                  "description": "Created By ID"
+                },
+                "LastModifiedDate": {
+                  "type": "datetime",
+                  "description": "Last Modified Date"
+                },
+                "LastModifiedById": {
+                  "type": "reference",
+                  "description": "Last Modified By ID"
+                },
+                "SystemModstamp": {
+                  "type": "datetime",
+                  "description": "System Modstamp"
+                },
+                "LastActivityDate": {
+                  "type": "date",
+                  "description": "Last Activity Date"
+                },
+                "parent__c": {
+                  "type": "reference",
+                  "description": "parent"
+                },
+                "ODK_grandparent_uuid__c": {
+                  "type": "string",
+                  "description": "ODK_grandparent_uuid"
+                },
+                "selected_specie__c": {
+                  "type": "string",
+                  "description": "selected_specie"
+                },
+                "catch_number__c": {
+                  "type": "double",
+                  "description": "catch_number"
+                },
+                "catch_weight_kg__c": {
+                  "type": "double",
+                  "description": "catch_weight_kg"
+                },
+                "catch_bait__c": {
+                  "type": "string",
+                  "description": "catch_bait"
+                },
+                "classification_record__c": {
+                  "type": "reference",
+                  "description": "classification_record"
+                },
+                "classification__c": {
+                  "type": "string",
+                  "description": "classification"
+                },
+                "ActivityHistories": {
+                  "type": "array",
+                  "sObject": "ActivityHistory",
+                  "foreignKey": "WhatId"
+                },
+                "Attachments": {
+                  "type": "array",
+                  "sObject": "Attachment",
+                  "foreignKey": "ParentId"
+                },
+                "Histories": {
+                  "type": "array",
+                  "sObject": "CCM_Catch__History",
+                  "foreignKey": "ParentId"
+                },
+                "CCM_Samples__r": {
+                  "type": "array",
+                  "sObject": "CCM_Sample__c",
+                  "foreignKey": "parent__c",
+                  "items": {
+                    "title": "(CCM) Sample",
+                    "properties": {
+                      "Id": {
+                        "type": "id",
+                        "description": "Record ID"
+                      },
+                      "IsDeleted": {
+                        "type": "boolean",
+                        "description": "Deleted"
+                      },
+                      "Name": {
+                        "type": "string",
+                        "description": "(CCM) Sample Name"
+                      },
+                      "CreatedDate": {
+                        "type": "datetime",
+                        "description": "Created Date"
+                      },
+                      "CreatedById": {
+                        "type": "reference",
+                        "description": "Created By ID"
+                      },
+                      "LastModifiedDate": {
+                        "type": "datetime",
+                        "description": "Last Modified Date"
+                      },
+                      "LastModifiedById": {
+                        "type": "reference",
+                        "description": "Last Modified By ID"
+                      },
+                      "SystemModstamp": {
+                        "type": "datetime",
+                        "description": "System Modstamp"
+                      },
+                      "LastActivityDate": {
+                        "type": "date",
+                        "description": "Last Activity Date"
+                      },
+                      "parent__c": {
+                        "type": "reference",
+                        "description": "parent"
+                      },
+                      "ODK_greatgrandparent_uuid__c": {
+                        "type": "string",
+                        "description": "ODK_greatgrandparent_uuid"
+                      },
+                      "sample_length__c": {
+                        "type": "double",
+                        "description": "sample_length"
+                      },
+                      "sample_weight_kg__c": {
+                        "type": "double",
+                        "description": "sample_weight_kg"
+                      },
+                      "sample_gender__c": {
+                        "type": "string",
+                        "description": "sample_gender"
+                      },
+                      "sample_berry__c": {
+                        "type": "string",
+                        "description": "sample_berry"
+                      },
+                      "ActivityHistories": {
+                        "type": "array",
+                        "sObject": "ActivityHistory",
+                        "foreignKey": "WhatId"
+                      },
+                      "Attachments": {
+                        "type": "array",
+                        "sObject": "Attachment",
+                        "foreignKey": "ParentId"
+                      },
+                      "Histories": {
+                        "type": "array",
+                        "sObject": "CCM_Sample__History",
+                        "foreignKey": "ParentId"
+                      },
+                      "FeedSubscriptionsForEntity": {
+                        "type": "array",
+                        "sObject": "EntitySubscription",
+                        "foreignKey": "ParentId"
+                      },
+                      "Events": {
+                        "type": "array",
+                        "sObject": "Event",
+                        "foreignKey": "WhatId"
+                      },
+                      "GoogleDocs": {
+                        "type": "array",
+                        "sObject": "GoogleDoc",
+                        "foreignKey": "ParentId"
+                      },
+                      "Notes": {
+                        "type": "array",
+                        "sObject": "Note",
+                        "foreignKey": "ParentId"
+                      },
+                      "NotesAndAttachments": {
+                        "type": "array",
+                        "sObject": "NoteAndAttachment",
+                        "foreignKey": "ParentId"
+                      },
+                      "OpenActivities": {
+                        "type": "array",
+                        "sObject": "OpenActivity",
+                        "foreignKey": "WhatId"
+                      },
+                      "ProcessInstances": {
+                        "type": "array",
+                        "sObject": "ProcessInstance",
+                        "foreignKey": "TargetObjectId"
+                      },
+                      "ProcessSteps": {
+                        "type": "array",
+                        "sObject": "ProcessInstanceHistory",
+                        "foreignKey": "TargetObjectId"
+                      },
+                      "Tasks": {
+                        "type": "array",
+                        "sObject": "Task",
+                        "foreignKey": "WhatId"
+                      }
+                    },
+                    "required": [
+                      "Id",
+                      "IsDeleted",
+                      "Name",
+                      "CreatedDate",
+                      "CreatedById",
+                      "LastModifiedDate",
+                      "LastModifiedById",
+                      "SystemModstamp",
+                      "parent__c"
+                    ],
+                    "type": "object",
+                    "$schema": "http://json-schema.org/draft-04/schema#"
+                  }
+                },
+                "FeedSubscriptionsForEntity": {
+                  "type": "array",
+                  "sObject": "EntitySubscription",
+                  "foreignKey": "ParentId"
+                },
+                "Events": {
+                  "type": "array",
+                  "sObject": "Event",
+                  "foreignKey": "WhatId"
+                },
+                "GoogleDocs": {
+                  "type": "array",
+                  "sObject": "GoogleDoc",
+                  "foreignKey": "ParentId"
+                },
+                "Notes": {
+                  "type": "array",
+                  "sObject": "Note",
+                  "foreignKey": "ParentId"
+                },
+                "NotesAndAttachments": {
+                  "type": "array",
+                  "sObject": "NoteAndAttachment",
+                  "foreignKey": "ParentId"
+                },
+                "OpenActivities": {
+                  "type": "array",
+                  "sObject": "OpenActivity",
+                  "foreignKey": "WhatId"
+                },
+                "ProcessInstances": {
+                  "type": "array",
+                  "sObject": "ProcessInstance",
+                  "foreignKey": "TargetObjectId"
+                },
+                "ProcessSteps": {
+                  "type": "array",
+                  "sObject": "ProcessInstanceHistory",
+                  "foreignKey": "TargetObjectId"
+                },
+                "Tasks": {
+                  "type": "array",
+                  "sObject": "Task",
+                  "foreignKey": "WhatId"
+                }
+              },
+              "required": [
+                "Id",
+                "IsDeleted",
+                "Name",
+                "CreatedDate",
+                "CreatedById",
+                "LastModifiedDate",
+                "LastModifiedById",
+                "SystemModstamp",
+                "parent__c"
+              ],
+              "type": "object",
+              "$schema": "http://json-schema.org/draft-04/schema#"
+            }
+          },
+          "FeedSubscriptionsForEntity": {
+            "type": "array",
+            "sObject": "EntitySubscription",
+            "foreignKey": "ParentId"
+          },
+          "Events": {
+            "type": "array",
+            "sObject": "Event",
+            "foreignKey": "WhatId"
+          },
+          "GoogleDocs": {
+            "type": "array",
+            "sObject": "GoogleDoc",
+            "foreignKey": "ParentId"
+          },
+          "Notes": {
+            "type": "array",
+            "sObject": "Note",
+            "foreignKey": "ParentId"
+          },
+          "NotesAndAttachments": {
+            "type": "array",
+            "sObject": "NoteAndAttachment",
+            "foreignKey": "ParentId"
+          },
+          "OpenActivities": {
+            "type": "array",
+            "sObject": "OpenActivity",
+            "foreignKey": "WhatId"
+          },
+          "ProcessInstances": {
+            "type": "array",
+            "sObject": "ProcessInstance",
+            "foreignKey": "TargetObjectId"
+          },
+          "ProcessSteps": {
+            "type": "array",
+            "sObject": "ProcessInstanceHistory",
+            "foreignKey": "TargetObjectId"
+          },
+          "Tasks": {
+            "type": "array",
+            "sObject": "Task",
+            "foreignKey": "WhatId"
+          }
+        },
+        "required": [
+          "Id",
+          "IsDeleted",
+          "Name",
+          "CreatedDate",
+          "CreatedById",
+          "LastModifiedDate",
+          "LastModifiedById",
+          "SystemModstamp",
+          "parent__c"
+        ],
+        "type": "object",
+        "$schema": "http://json-schema.org/draft-04/schema#"
+      }
+    },
+    "Shares": {
+      "type": "array",
+      "sObject": "CCM_MonitorLog__Share",
+      "foreignKey": "ParentId"
+    },
+    "FeedSubscriptionsForEntity": {
+      "type": "array",
+      "sObject": "EntitySubscription",
+      "foreignKey": "ParentId"
+    },
+    "Events": {
+      "type": "array",
+      "sObject": "Event",
+      "foreignKey": "WhatId"
+    },
+    "GoogleDocs": {
+      "type": "array",
+      "sObject": "GoogleDoc",
+      "foreignKey": "ParentId"
+    },
+    "Notes": {
+      "type": "array",
+      "sObject": "Note",
+      "foreignKey": "ParentId"
+    },
+    "NotesAndAttachments": {
+      "type": "array",
+      "sObject": "NoteAndAttachment",
+      "foreignKey": "ParentId"
+    },
+    "OpenActivities": {
+      "type": "array",
+      "sObject": "OpenActivity",
+      "foreignKey": "WhatId"
+    },
+    "ProcessInstances": {
+      "type": "array",
+      "sObject": "ProcessInstance",
+      "foreignKey": "TargetObjectId"
+    },
+    "ProcessSteps": {
+      "type": "array",
+      "sObject": "ProcessInstanceHistory",
+      "foreignKey": "TargetObjectId"
+    },
+    "Tasks": {
+      "type": "array",
+      "sObject": "Task",
+      "foreignKey": "WhatId"
+    }
+  },
+  "required": [
+    "Id",
+    "OwnerId",
+    "IsDeleted",
+    "Name",
+    "CreatedDate",
+    "CreatedById",
+    "LastModifiedDate",
+    "LastModifiedById",
+    "SystemModstamp",
+    "ODK_uuid__c"
+  ],
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema#"
+}
+  }
+}

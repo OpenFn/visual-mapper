@@ -1,0 +1,66 @@
+[
+    {
+        "operation": "shift",
+        "spec": {
+            "data": "CCM_MonitorLog__c"
+        }
+    },
+    {
+        "operation": "shift",
+        "spec": {
+            "CCM_MonitorLog__c": {
+                "*": {
+                    "end": "CCM_MonitorLog__c.ODK_time_end__c",
+                    "today": "CCM_MonitorLog__c.ODK_date__c",
+                    "deviceid": "CCM_MonitorLog__c.ODK_device__c",
+                    "monitor_name": "CCM_MonitorLog__c.monitor_name__c",
+                    "monitor_name_manual": "CCM_MonitorLog__c.monitor_name_manual__c",
+                    "wind_direction": "CCM_MonitorLog__c.wind_direction__c",
+                    "landing_site": "CCM_MonitorLog__c.landing_site__c",
+                    "sea_condition": "CCM_MonitorLog__c.sea_condition__c",
+                    "wind_strength": "CCM_MonitorLog__c.wind_strength__c",
+                    "weather": "CCM_MonitorLog__c.weather__c",
+                    "geopoint:Latitude": "CCM_MonitorLog__c.lat__c",
+                    "geopoint:Longitude": "CCM_MonitorLog__c.lon__c",
+                    "geopoint:Altitude": "CCM_MonitorLog__c.alt__c",
+                    "geopoint:Accuracy": "CCM_MonitorLog__c.acc__c",
+                    "num_boats_launched": "CCM_MonitorLog__c.num_boats_launched__c",
+                    "geopoint": "CCM_MonitorLog__c.geopoint__c",
+                    "instanceID": "CCM_MonitorLog__c.ODK_uuid__c",
+                    "rpt_boats": {
+                        "*": {
+                            "fisher_name": "CCM_MonitorLog__c.CCM_Boats__r[&1].fisher_name__c",
+                            "fisher_gender": "CCM_MonitorLog__c.CCM_Boats__r[&1].fisher_gender__c",
+                            "permit_has": "CCM_MonitorLog__c.CCM_Boats__r[&1].permit_has__c",
+                            "boat_type": "CCM_MonitorLog__c.CCM_Boats__r[&1].boat_type__c",
+                            "reg_type": "CCM_MonitorLog__c.CCM_Boats__r[&1].reg_type__c",
+                            "boat_skipper": "CCM_MonitorLog__c.CCM_Boats__r[&1].boat_skipper__c",
+                            "boat_owner": "CCM_MonitorLog__c.CCM_Boats__r[&1].boat_owner__c",
+                            "crew_number": "CCM_MonitorLog__c.CCM_Boats__r[&1].crew_number__c",
+                            "engine_capacity": "CCM_MonitorLog__c.CCM_Boats__r[&1].engine_capacity__c",
+                            "comment_has": "CCM_MonitorLog__c.CCM_Boats__r[&1].comment_has__c",
+                            "comment_text": "CCM_MonitorLog__c.CCM_Boats__r[&1].comment_text__c",
+                            "comment_image": "CCM_MonitorLog__c.CCM_Boats__r[&1].comment_image__c",
+                            "rpt_catch": {
+                                "*": {
+                                    "selected_specie": "CCM_MonitorLog__c.CCM_Boats__r[&3].CCM_Catches__r[&1].selected_specie__c",
+                                    "catch_number": "CCM_MonitorLog__c.CCM_Boats__r[&3].CCM_Catches__r[&1].catch_number__c",
+                                    "catch_weight_kg": "CCM_MonitorLog__c.CCM_Boats__r[&3].CCM_Catches__r[&1].catch_weight_kg__c",
+                                    "catch_bait": "CCM_MonitorLog__c.CCM_Boats__r[&3].CCM_Catches__r[&1].catch_bait__c",
+                                    "rpt_sample": {
+                                        "*": {
+                                            "sample_length": "CCM_MonitorLog__c.CCM_Boats__r[&5].CCM_Catches__r[&3].CCM_Samples__r[&1].sample_length__c",
+                                            "sample_weight": "CCM_MonitorLog__c.CCM_Boats__r[&5].CCM_Catches__r[&3].CCM_Samples__r[&1].sample_weight_kg__c",
+                                            "sample_gender": "CCM_MonitorLog__c.CCM_Boats__r[&5].CCM_Catches__r[&3].CCM_Samples__r[&1].sample_gender__c",
+                                            "sample_berry": "CCM_MonitorLog__c.CCM_Boats__r[&5].CCM_Catches__r[&3].CCM_Samples__r[&1].sample_berry__c"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+]
