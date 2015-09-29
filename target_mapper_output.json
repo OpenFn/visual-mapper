@@ -1,0 +1,50 @@
+[
+  {
+    "sObject": "CCM_MonitorLog__c",
+    "properties": {
+      "ODK_time_end__c": "source_submission.end",
+      "ODK_date__c": "source_submission.today",
+      "ODK_device__c": "source_submission.deviceid",
+      "monitor_name__c": "source_submission.monitor_name",
+      "sea_condition__c": "source_submission.sea_condition",
+      "wind_strength__c": "source_submission.weather",
+      //notice the hard-coded text below, it's Always Sunny, regardless of the source submission!
+      "weather__c": "Always Sunny",
+      "lat__c": "geopoint:Latitude",
+      "lon__c": "geopoint:Longitude",
+      //as many "key":"value" pairs as are specified in the form by the user.
+    }
+  },
+  {
+    "sObject": "CCM_Boat__c",
+    "properties": {
+      "fisher_name__c": "source_submission.fisher_name",
+      "fisher_gender__c": "source_submission.fisher_gender",
+      //as many "key":"value" pairs as are specified in the form by the user.
+      //note the important linkage to the parent
+      "parent__c": {
+        "$ref": "/0/properties/Id" // this "/0/properties/Id" is linking a particular boat record to it's correct parent.
+      }
+    }
+  },
+  {
+    "sObject": "CCM_Catch__c",
+    "properties": {
+      "selected_specie__c": "source_submission.selected_specie",
+      //as many "key":"value" pairs as are specified in the form by the user.
+      //note the important linkage to the parent
+      "parent__c": {
+        "$ref": "/1/properties/Id" // this continues as far down the tree as it needs to.
+      }
+    }
+  },
+  {
+    "sObject": "CCM_Sample__c",
+    "properties": {
+      "sample_length__c": "source_submission.sample_length",
+      "parent__c": {
+        "$ref": "/2/properties/Id" //note linkage to catch.
+      }
+    }
+  }
+]
